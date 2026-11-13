@@ -1,0 +1,50 @@
+
+.header-toolbar {
+  background-color: #172554;
+  color: white;
+  height: 75px;
+  padding: 0 40px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background-color: #facc15;
+  color: #172554;
+  border-radius: 12px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.brand-name {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.header-description {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.username {
+  font-size: 14px;
+  margin-right: 16px;
+  font-weight: 400;
+}
+
+button {
+  font-size: 13px;
+}

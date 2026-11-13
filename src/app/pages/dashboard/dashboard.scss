@@ -1,0 +1,107 @@
+.dashboard-container {
+  padding: 20px 0;
+}
+
+.eyebrow {
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.page-header h1 {
+  color: #172554;
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.page-header p {
+  color: #64748b;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+}
+
+.stat-icon mat-icon {
+  color: white;
+}
+
+.blue {
+  background: #2563eb;
+}
+
+.yellow {
+  background: #d97706;
+}
+
+.green {
+  background: #16a34a;
+}
+
+.stat-label {
+  display: block;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.stat-card strong {
+  display: block;
+  color: #172554;
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+.welcome-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 25px;
+  border-radius: 12px;
+  background: #eff6ff;
+}
+
+.welcome-card > mat-icon {
+  color: #2563eb;
+  font-size: 38px;
+  width: 38px;
+  height: 38px;
+}
+
+.welcome-card h2 {
+  color: #172554;
+  font-size: 18px;
+}
+
+.welcome-card p {
+  color: #475569;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

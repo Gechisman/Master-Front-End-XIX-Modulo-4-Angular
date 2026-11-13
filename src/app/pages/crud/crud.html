@@ -1,0 +1,113 @@
+<section class="crud-container">
+  <div class="page-header">
+    <span class="eyebrow">GESTIÓN</span>
+    <h1>Gestor de tareas</h1>
+    <p>Añade, consulta, modifica y elimina tus tareas.</p>
+  </div>
+
+  <div class="crud-layout">
+    <mat-card class="form-card">
+      <mat-card-header>
+        <mat-card-title>
+          {{ editingId !== null ? 'Editar tarea' : 'Nueva tarea' }}
+        </mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content>
+        <form (ngSubmit)="saveTask()">
+          <mat-form-field appearance="outline">
+            <mat-label>Título</mat-label>
+            <input
+              matInput
+              name="title"
+              [(ngModel)]="title"
+              placeholder="Ej. Aprender Angular"
+              required
+            >
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Descripción</mat-label>
+            <textarea
+              matInput
+              name="description"
+              [(ngModel)]="description"
+              placeholder="Describe la tarea..."
+              rows="4"
+              required
+            ></textarea>
+          </mat-form-field>
+
+          <button
+            mat-flat-button
+            color="primary"
+            type="submit"
+            class="save-button"
+          >
+            <mat-icon>
+              {{ editingId !== null ? 'save' : 'add' }}
+            </mat-icon>
+
+            {{ editingId !== null ? 'Guardar cambios' : 'Añadir tarea' }}
+          </button>
+
+          @if (editingId !== null) {
+            <button
+              mat-button
+              type="button"
+              (click)="resetForm()"
+            >
+              Cancelar edición
+            </button>
+          }
+        </form>
+      </mat-card-content>
+    </mat-card>
+
+    <div class="tasks-section">
+      <div class="tasks-heading">
+        <h2>Mis tareas</h2>
+        <span class="task-count">{{ tasks.length }} tareas</span>
+      </div>
+
+      @if (tasks.length === 0) {
+        <mat-card class="empty-card">
+          <mat-icon>inbox</mat-icon>
+          <p>No hay tareas todavía.</p>
+          <span>Añade tu primera tarea utilizando el formulario.</span>
+        </mat-card>
+      }
+
+      @for (task of tasks; track task.id) {
+        <mat-card class="task-card">
+          <div class="task-information">
+            <h3>{{ task.title }}</h3>
+            <p>{{ task.description }}</p>
+          </div>
+
+          <div class="task-actions">
+            <button
+              mat-icon-button
+              color="primary"
+              type="button"
+              aria-label="Editar tarea"
+              (click)="editTask(task)"
+            >
+              <mat-icon>edit</mat-icon>
+            </button>
+
+            <button
+              mat-icon-button
+              color="warn"
+              type="button"
+              aria-label="Eliminar tarea"
+              (click)="deleteTask(task.id)"
+            >
+              <mat-icon>delete</mat-icon>
+            </button>
+          </div>
+        </mat-card>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,44 @@
+<section class="profile-container">
+  <div class="page-header">
+    <span class="eyebrow">CUENTA</span>
+    <h1>Mi perfil</h1>
+    <p>Consulta la información de tu cuenta.</p>
+  </div>
+
+  <mat-card class="profile-card">
+    <div class="profile-avatar">
+      <mat-icon>person</mat-icon>
+    </div>
+
+    <h2>{{ auth.getUsername() }}</h2>
+    <span class="role">Usuario administrador</span>
+
+    <div class="divider"></div>
+
+    <div class="profile-information">
+      <div class="information-row">
+        <mat-icon>email</mat-icon>
+        <div>
+          <span>Correo electrónico</span>
+          <strong>{{ auth.getUsername() }}</strong>
+        </div>
+      </div>
+
+      <div class="information-row">
+        <mat-icon>verified_user</mat-icon>
+        <div>
+          <span>Estado de la cuenta</span>
+          <strong class="active-status">Activa</strong>
+        </div>
+      </div>
+
+      <div class="information-row">
+        <mat-icon>security</mat-icon>
+        <div>
+          <span>Tipo de cuenta</span>
+          <strong>Administrador</strong>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+</section>

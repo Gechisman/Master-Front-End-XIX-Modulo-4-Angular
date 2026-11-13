@@ -1,0 +1,27 @@
+
+<mat-toolbar class="header-toolbar">
+
+  <div class="brand">
+    <span class="brand-logo">A</span>
+    <span class="brand-name">Amazoff</span>
+  </div>
+
+  <span class="spacer"></span>
+
+  @if (auth.isLogged()) {
+    <span class="username">
+      {{ auth.getUsername() }}
+    </span>
+
+    <button mat-flat-button
+            color="accent"
+            (click)="logout()">
+      Salir
+    </button>
+  } @else {
+    <span class="header-description">
+      Tu espacio digital
+    </span>
+  }
+
+</mat-toolbar>

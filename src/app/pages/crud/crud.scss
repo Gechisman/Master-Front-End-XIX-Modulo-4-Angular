@@ -1,0 +1,128 @@
+.crud-container {
+  padding: 20px 0;
+}
+
+.page-header {
+  margin-bottom: 30px;
+}
+
+.eyebrow {
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.page-header h1 {
+  color: #172554;
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.page-header p {
+  color: #64748b;
+}
+
+.crud-layout {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 25px;
+  align-items: start;
+}
+
+.form-card {
+  padding: 20px;
+  border-radius: 12px;
+}
+
+mat-card-header {
+  margin-bottom: 20px;
+}
+
+mat-card-title {
+  color: #172554;
+  font-size: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.save-button {
+  height: 45px;
+}
+
+.tasks-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.tasks-heading h2 {
+  color: #172554;
+  font-size: 21px;
+}
+
+.task-count {
+  background: #dbeafe;
+  color: #1d4ed8;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+.task-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 18px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+}
+
+.task-information {
+  min-width: 0;
+}
+
+.task-information h3 {
+  color: #172554;
+  margin: 0 0 8px;
+}
+
+.task-information p {
+  color: #64748b;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.task-actions {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.empty-card {
+  text-align: center;
+  padding: 35px;
+  color: #64748b;
+}
+
+.empty-card mat-icon {
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 800px) {
+  .crud-layout {
+    grid-template-columns: 1fr;
+  }
+}

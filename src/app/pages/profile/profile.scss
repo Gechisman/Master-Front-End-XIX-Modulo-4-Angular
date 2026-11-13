@@ -1,0 +1,100 @@
+.profile-container {
+  padding: 20px 0;
+}
+
+.page-header {
+  margin-bottom: 30px;
+}
+
+.eyebrow {
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.page-header h1 {
+  color: #172554;
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.page-header p {
+  color: #64748b;
+}
+
+.profile-card {
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 35px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.profile-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 20px;
+  background: #dbeafe;
+  border-radius: 50%;
+}
+
+.profile-avatar mat-icon {
+  color: #2563eb;
+  font-size: 48px;
+  width: 48px;
+  height: 48px;
+}
+
+.profile-card h2 {
+  color: #172554;
+  font-size: 20px;
+  overflow-wrap: anywhere;
+}
+
+.role {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.divider {
+  height: 1px;
+  background: #e2e8f0;
+  margin: 30px 0;
+}
+
+.profile-information {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: left;
+}
+
+.information-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.information-row mat-icon {
+  color: #2563eb;
+}
+
+.information-row span {
+  display: block;
+  color: #64748b;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.information-row strong {
+  color: #172554;
+  overflow-wrap: anywhere;
+}
+
+.information-row .active-status {
+  color: #16a34a;
+}

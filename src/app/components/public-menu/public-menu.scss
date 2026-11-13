@@ -1,0 +1,21 @@
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 20px;
+  background-color: white;
+  border-bottom: 1px solid #e5e7eb;
+
+  a {
+    color: #334155;
+    font-weight: 500;
+    border-radius: 8px;
+  }
+
+  .active-link {
+    background-color: #eff6ff;
+    color: #2563eb;
+  }
+}

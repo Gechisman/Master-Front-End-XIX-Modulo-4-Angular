@@ -1,0 +1,22 @@
+<section class="gallery-container">
+  <div class="page-header">
+    <span class="eyebrow">CONTENIDO</span>
+    <h1>Galería</h1>
+    <p>Descubre nuestra colección de categorías.</p>
+  </div>
+
+  <div class="gallery-grid">
+    @for (item of images; track item.title) {
+      <mat-card class="gallery-card">
+        <div class="gallery-image" [class]="item.color">
+          <mat-icon>{{ item.icon }}</mat-icon>
+        </div>
+
+        <mat-card-content>
+          <h2>{{ item.title }}</h2>
+          <p>{{ item.description }}</p>
+        </mat-card-content>
+      </mat-card>
+    }
+  </div>
+</section>

@@ -1,0 +1,52 @@
+<section class="dashboard-container">
+  <div class="page-header">
+    <div>
+      <span class="eyebrow">ÁREA PRIVADA</span>
+      <h1>Dashboard</h1>
+      <p>¡Bienvenido, {{ auth.getUsername() }}!</p>
+    </div>
+  </div>
+
+  <div class="stats-grid">
+    <mat-card class="stat-card">
+      <div class="stat-icon blue">
+        <mat-icon>people</mat-icon>
+      </div>
+      <div>
+        <span class="stat-label">Usuarios</span>
+        <strong>128</strong>
+      </div>
+    </mat-card>
+
+    <mat-card class="stat-card">
+      <div class="stat-icon yellow">
+        <mat-icon>photo_library</mat-icon>
+      </div>
+      <div>
+        <span class="stat-label">Imágenes</span>
+        <strong>24</strong>
+      </div>
+    </mat-card>
+
+    <mat-card class="stat-card">
+      <div class="stat-icon green">
+        <mat-icon>inventory_2</mat-icon>
+      </div>
+      <div>
+        <span class="stat-label">Elementos</span>
+        <strong>56</strong>
+      </div>
+    </mat-card>
+  </div>
+
+  <mat-card class="welcome-card">
+    <mat-icon>verified_user</mat-icon>
+    <div>
+      <h2>Sesión iniciada correctamente</h2>
+      <p>
+        Ya tienes acceso al área privada de Amazoff.
+        Utiliza el menú superior para navegar por las diferentes secciones.
+      </p>
+    </div>
+  </mat-card>
+</section>
